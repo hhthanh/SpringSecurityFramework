@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Base Define -->
+	<definition name="base.definition" template="/WEB-INF/jsp/template/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/tiles/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/tiles/footer.jsp" />
+	</definition>
+
+	<!-- Home Page -->
+	<definition name="homePage" extends="base.definition">
+		<put-attribute name="title" value="Homepage" />
+		<put-attribute name="body" value="/WEB-INF/jsp/static_page/index.jsp" />
+	</definition>
+
+	<definition name="systemMessage" extends="base.definition">
+		<put-attribute name="title" value="System Message" />
+		<put-attribute name="body" value="/WEB-INF/jsp/system_message.jsp" />
+	</definition>
+	
+	<definition name="login" extends="base.definition">
+		<put-attribute name="title" value="System Message" />
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+	</definition>
+	
+	<definition name="error" extends="base.definition">
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="body" value="/WEB-INF/jsp/static_page/error.jsp" />
+	</definition>
+
+</tiles-definitions>

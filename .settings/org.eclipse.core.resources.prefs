@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/main/resources/init_database.sql=UTF-8
+encoding//src/main/resources/locale/interface_ja_JP.properties=UTF-8
+encoding//src/main/resources/user_data_data.sql=UTF-8
+encoding//src/main/resources/user_login_data.sql=UTF-8
+encoding/<project>=UTF-8
